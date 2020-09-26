@@ -70,3 +70,11 @@ print(f'Sorted List Alphabetical: {sorted(cars)}')
 print(f'Sorted List Reverse Alphabetical: {cars.reverse()}')
 print(f'Original List: {cars}')
 
+# reverse a list permanently
+print()
+print(cars)
+cars.reverse()
+print(cars)
+# revert back by reversing it again
+cars.reverse()
+print(cars)

@@ -44,3 +44,35 @@ while(len(guests) > 0):
     del guests[len(guests)-1]
 
 print(guests)
+
+# exercise 3-8
+vacation_spots = ['polynesian islands', 'south america', 'canada', 'germany', 'hawaii islands']
+print()
+print('Location spots: ', end='')
+print(vacation_spots, '\n')
+
+print(f"Alphabetical: ", end='')
+print(sorted(vacation_spots))
+print("Original form: ", end='')
+print(vacation_spots, end='\n\n')
+
+print(f"Reverse Alphabetical: ", end='')
+print(sorted(vacation_spots, reverse=True))
+print("Original form: ", end='')
+print(vacation_spots, end='\n\n')
+
+vacation_spots.reverse()
+print('Reverse order: ', end='')
+print(vacation_spots, end='\n')
+
+vacation_spots.reverse()
+print("Original form: ", end='')
+print(vacation_spots,end='\n\n')
+
+vacation_spots.sort()
+print("Permanent Alpha Order: ", end='')
+print(vacation_spots)
+
+vacation_spots.sort(reverse=True)
+print("Permanent Reverse Alpha Order: ", end='')
+print(vacation_spots)
