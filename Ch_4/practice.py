@@ -54,3 +54,8 @@ print(sorted(sequence))
 print(almostIncreasingSequence(sequence))
 
 print(sequence.pop(0))
+
+# tuples
+dimensions = (200, 50, 30, 222, 3321, 3352)
+print(dimensions[1:5])
+
