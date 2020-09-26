@@ -76,3 +76,5 @@ print(vacation_spots)
 vacation_spots.sort(reverse=True)
 print("Permanent Reverse Alpha Order: ", end='')
 print(vacation_spots)
+
+print(vacation_spots[::-1])
