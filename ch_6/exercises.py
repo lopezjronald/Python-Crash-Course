@@ -82,6 +82,7 @@ favorite_languages = {
     'phil': 'python',
 }
 
+
 for name in favorite_languages.keys():
     if name not in voters:
         print(f'{name.title()}, you need to vote!')
@@ -94,3 +95,114 @@ for name in favorite_languages.keys():
         print(f'{name.title()}, you need to vote!')
     else:
         print(f'{name.title()}, thank you for voting :)')
+
+
+# exercise 6-7
+print()
+person_0 = {
+    'first_name': 'ronald',
+    'last_name': 'lopez',
+    'age': 34,
+    'city': 'honolulu',
+}
+person_1 = {
+    'first_name': 'donald',
+    'last_name': 'trump',
+    'age': 70,
+    'city': 'new york',
+}
+
+person_2 = {
+    'first_name': 'bears',
+    'last_name': 'grills',
+    'age': 45,
+    'city': 'alaska',
+}
+
+people = [person_0, person_1, person_2]
+for person in people:
+    print()
+    print(person['first_name'])
+    print(person['last_name'])
+    print(person['age'])
+    print(person['city'])
+
+# exercise 6-8
+print()
+pet_0 = {
+    'type': 'cat',
+    'breed': 'house cat',
+    'name': 'whiskers',
+    'owner': 'steve austin',
+}
+
+pet_1 = {
+    'type': 'dog',
+    'breed': 'husky',
+    'name': 'pudding',
+    'owner': 'hanky',
+}
+
+pet_2 = {
+    'type': 'fish',
+    'breed': 'blue',
+    'name': 'dora',
+    'owner': 'nemo',
+}
+
+pets = [pet_0, pet_1, pet_2]
+for pet in pets:
+    print()
+    for key, value in pet.items():
+        print(key.title(), ": ", value.title())
+
+# exercise 6-9
+
+# exercise 6-10
+print()
+favorite_numbers = {
+    'joyce': [22, 33, 35],
+    'ronald': [232, 22, 139],
+    'mcfee': [33, 233, 3566223345],
+}
+
+for name, numbers in favorite_numbers.items():
+    print()
+    print(f"{name.title()}'s favorite number(s):")
+    for number in numbers:
+        print(f"- {number}")
+
+# exercise 6-11
+print()
+
+states = {
+    'california': {
+        "nickname": "the golden state",
+        "capital": "sacramento",
+        "population": 39_144_818,
+        "abbreviation": "ca",
+    },
+    'alabama': {
+        "nickname": "the heart of dixie",
+        "capital": "montgomery",
+        "population": 4_858_979,
+        "abbreviation": "al",
+    },
+    'florida': {
+        "nickname": "the sunshine state",
+        "capital": "tallahassee",
+        "population": 20_271_272,
+        "abbreviation": "fl",
+    },
+}
+for state, state_info in states.items():
+    print()
+    print(state.title())
+    for key, value in state_info.items():
+        if (type(value) == int):
+            print(key.title(), ":", value)
+        else:
+            print(key.title(), ":", value.title())
+
+
+# exercise 6-12
