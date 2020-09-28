@@ -147,3 +147,7 @@ class Car:
         self.odometer_reading += miles
 
 
+import random
+
+flavor = (random.choice(ice_cream_flavors))
+print(flavor)

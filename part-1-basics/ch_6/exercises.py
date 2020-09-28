@@ -32,7 +32,7 @@ glossary = {
     'program': 'A computer program is termed as an organized collection of instructions, which when executed perform '
                'a specific task or function. A program is processed by the central processing unit (CPU) of the '
                'computer before it is executed. An example of a program is Microsoft Word, which is a word processing '
-               'application that enables users to create and edit documents. The browsers that we use are also '
+               'application that enables user to create and edit documents. The browsers that we use are also '
                'programs created to help us browse the internet.',
     'api': 'Application Programming Interface (API) is a set of rules, routines, and protocols to build software '
            'applications. APIs help in communication with third party programs or services, which can be used to '
