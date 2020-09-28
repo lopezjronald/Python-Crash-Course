@@ -80,3 +80,95 @@ while making_album:
         album = raw_input("Album name: ")
         all_albums[f'album_{len(all_albums)}'] = make_album(artist=artist, name=album)
 print(all_albums)
+
+
+# exercise 8-9
+def print_messages(messages):
+    for message in messages:
+        print(message)
+
+
+text_messages = ["Hello there", "Text you later", "Working out"]
+print_messages(text_messages)
+
+# exercise 8-10
+messages_sent = []
+
+
+def sent_messages(messages):
+    while messages:
+        messages_sent.append(messages.pop())
+
+
+sent_messages(text_messages)
+print(text_messages)
+print(messages_sent)
+
+# exercise 8-11
+messages_sent = []
+text_messages = ["Hello there", "Text you later", "Working out"]
+print_messages(text_messages)
+sent_messages(text_messages[:])
+print(text_messages)
+print(messages_sent)
+
+
+# exercise 8-12
+def make_sandwich(*items_in_sandwich):
+    return list(items_in_sandwich)
+
+
+items = make_sandwich('lettuce', 'tomato', 'mustard', 'ham')
+print(type(items))
+print("Items in sandwich: ")
+for item in items:
+    print(f'- {item}')
+
+
+# exercise 8-13
+def user_profile(**user_info):
+    return user_info
+
+
+first = "Jeff"
+last = "Lopez"
+hobby = ['Reading', "MMA", "Traveling", "Working out", "Movies"]
+location = 'CA'
+
+user_1 = user_profile(name=f'{first} {last}', hobby=hobby, location=location)
+print(user_1)
+
+
+# exercise 8-14
+def make_car(make, model, **car_info):
+    car_info['make'] = make
+    car_info['model'] = model
+    return car_info
+
+
+make = "Toyota"
+model = "Prius"
+color = 'Charcoal'
+doors = 4
+print(make_car(make, model, color=color, doors=doors))
+
+# exercise 8-15
+# Done
+
+import printing_models
+
+user = 'Jeff'
+printing_models.say_hello()
+printing_models.say_hello_user(user)
+
+import printing_models as pm
+
+pm.say_hello()
+
+from printing_models import say_hello
+
+say_hello()
+
+from printing_models import say_hello_user as shu
+
+shu(user)
